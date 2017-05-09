@@ -1,0 +1,16 @@
+uuid: 65505f6a-1985-41db-abd2-1e5aa733f938
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.trips
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.trips
+target_entity_type_id: node
+target_bundle: trips
+default_langcode: site_default
+language_alterable: true

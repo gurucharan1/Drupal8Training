@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="lib" path="restui-8.x-1.14.zip"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="src" path="drush"/>
+	<buildpathentry kind="src" path="web"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry kind="src" path="scripts/composer"/>
+</buildpath>

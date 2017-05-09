@@ -1,0 +1,34 @@
+uuid: aa0db00a-4904-42c8-9ba7-68bca985a95f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:66e28bd1-c243-44ad-8b18-ca2610460264'
+  module:
+    - block_content
+    - language
+  theme:
+    - bartik
+id: worldinjuzz10days
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:66e28bd1-c243-44ad-8b18-ca2610460264'
+settings:
+  id: 'block_content:66e28bd1-c243-44ad-8b18-ca2610460264'
+  label: 'World in juzz 10 days'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

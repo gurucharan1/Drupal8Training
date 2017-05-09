@@ -1,0 +1,20 @@
+uuid: 0be2d2dc-8dc9-4749-bc1a-11f44b27fd31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trips.field_title
+    - node.type.trips
+  module:
+    - user
+id: node.trips.teaser
+targetEntityType: node
+bundle: trips
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_title: true
+  langcode: true

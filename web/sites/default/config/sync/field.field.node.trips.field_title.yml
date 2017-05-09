@@ -1,0 +1,21 @@
+uuid: dac1fa87-18f7-4ce6-b2d7-a7ddd67e6dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.trips
+  module:
+    - text
+id: node.trips.field_title
+field_name: field_title
+entity_type: node
+bundle: trips
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
