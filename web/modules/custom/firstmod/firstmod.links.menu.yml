@@ -1,0 +1,5 @@
+firstmod.static_menu_link:
+  title: 'Static Content'
+  description: 'Render demo static content'
+  route_name: firstmod.static_content
+  parent: system.admin_config_system

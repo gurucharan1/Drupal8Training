@@ -1,0 +1,9 @@
+firstmod.tab1:
+  title: 'Tab1'
+  route_name: firstmod.static_content
+  base_route: firsttab.tab1
+
+firstmod.tab2:
+  title: 'Tab2'
+  route_name: firstmod.dynamic_content 
+  base_route: firsttab.tab1

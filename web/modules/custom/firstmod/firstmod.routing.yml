@@ -1,0 +1,53 @@
+firstmod.static_content:
+  path: '/static-content'
+  defaults:
+    _controller: 'Drupal\firstmod\Controller\FirstmodController::content'
+  requirements:
+    _user_is_logged_in: 'True'
+    
+firstmod.dynamic_content:
+  path: '/arg-demo/{arg}'
+  defaults:
+    _controller: 'Drupal\firstmod\Controller\FirstmodController::dcontent'
+    arg: 1
+  requirements:
+    _permission: 'acces content'
+   
+firstmod.entity_upcaster:
+  path: '/list/{node}'
+  defaults:
+    _controller: 'Drupal\firstmod\Controller\FirstmodController::upcastecontent'
+    arg: 1
+  requirements:
+    _custom_access: Drupal\firstmod\Controller\FirstmodController::nodeCreatorCheck
+    
+firstmod.simple_form:
+  path: '/simple-form'
+  defaults:
+    _form: 'Drupal\firstmod\Form\SimpleForm'
+  requirements:
+    _permission: 'acces content'
+    
+firstmod.Dic_form:
+  path: '/dic-form'
+  defaults:
+    _form: 'Drupal\firstmod\Form\DicForm'
+  requirements:
+    _permission: 'acces content'
+
+firstmod.misc_form:
+  path: '/firstmod/form/misc1'
+  defaults:
+    _form: '\Drupal\firstmod\Form\MiscForm'
+    _title: 'MiscForm'
+  requirements:
+    _access: 'TRUE'
+    
+firstmod.weather_content:
+  path: '/admin/config/weatherform'
+  defaults:
+    _form: '\Drupal\firstmod\Form\WeatherForm'
+    _title: 'WeatherForm'
+  requirements:
+    _access: 'TRUE'
+  
